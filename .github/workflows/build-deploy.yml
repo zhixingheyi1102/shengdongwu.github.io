@@ -35,7 +35,14 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
+          gem install breakpoint
+          gem install faraday-retry
           bundle install
+      - name: Create _breakpoint.scss if needed
+        run: |
+          mkdir -p _sass
+          echo '// 桥接到breakpoint gem' > _sass/_breakpoint.scss
+          echo '@import "vendor/breakpoint/breakpoint";' >> _sass/_breakpoint.scss
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll

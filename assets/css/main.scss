@@ -12,10 +12,13 @@
 @import "themes";
 @import "theme/default";
 @import "theme/dark";
+
 @import "include/mixins";
 @import "vendor/susy/susy";
+
 @import "layout/reset";
 @import "layout/base";
+
 @import "include/utilities";
 @import "layout/tables";
 @import "layout/buttons";
@@ -24,11 +27,14 @@
 @import "layout/navigation";
 @import "layout/footer";
 @import "syntax";
+
 @import "layout/forms";
+
 @import "layout/page";
 @import "layout/archive";
 @import "layout/sidebar";
 @import "layout/projects";
+
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
