@@ -42,7 +42,7 @@ jobs:
         run: |
           mkdir -p _sass
           echo '// 桥接到breakpoint gem' > _sass/_breakpoint.scss
-          echo '@import "vendor/breakpoint/breakpoint";' >> _sass/_breakpoint.scss
+          echo '@import "breakpoint";' >> _sass/_breakpoint.scss
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
