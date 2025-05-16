@@ -8,34 +8,37 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-@import "breakpoint";
-@import "themes";
-@import "theme/default";
-@import "theme/dark";
+@import
+    "vendor/breakpoint/breakpoint",
 
-@import "include/mixins";
-@import "vendor/susy/susy";
+    "themes",
+    "theme/default",
+    "theme/dark",
 
-@import "layout/reset";
-@import "layout/base";
+    "include/mixins",
+    "vendor/susy/susy",
 
-@import "include/utilities";
-@import "layout/tables";
-@import "layout/buttons";
-@import "layout/notices";
-@import "layout/masthead";
-@import "layout/navigation";
-@import "layout/footer";
-@import "syntax";
+    "layout/reset",
+    "layout/base",
 
-@import "layout/forms";
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
 
-@import "layout/page";
-@import "layout/archive";
-@import "layout/sidebar";
-@import "layout/projects";
+    "layout/forms",
 
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/brands";
-@import "vendor/magnific-popup/magnific-popup";
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/projects",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands",
+    "vendor/magnific-popup/magnific-popup"
+;
