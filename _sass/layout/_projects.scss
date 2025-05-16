@@ -1,0 +1,61 @@
+/* ==========================================================================
+   项目页面样式
+   ========================================================================== */
+
+.projects-container {
+  margin-bottom: 2em;
+}
+
+.project-item {
+  display: flex;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #f2f3f3;
+  padding-bottom: 1em;
+}
+
+.project-thumbnail {
+  flex: 0 0 200px;
+  margin-right: 1em;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+}
+
+.project-content {
+  flex: 1;
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    
+    a {
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  p {
+    margin-top: 0.5em;
+    font-size: 0.75em;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+  }
+  
+  .project-thumbnail {
+    margin-right: 0;
+    margin-bottom: 1em;
+    max-width: 100%;
+  }
+} 
