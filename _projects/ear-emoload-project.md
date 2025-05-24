@@ -15,7 +15,7 @@ priority: 0
 This project aims to address the limitations of traditional electroencephalography (EEG) devices in educational settings when monitoring students' affective states and cognitive load, such as poor portability, high cost, and unsuitability for long-term wear. To this end, we have developed the Ear-EmoLoad system, a low-cost EEG solution based on in-ear electrodes that can be seamlessly integrated into commercial headphones. The core of this system includes replaceable EEG earplugs designed using PDMS material, along with a supporting signal acquisition and processing system. 
 
 <div class="center-image">
-  <img src="{{ site.baseurl }}/images/projects/research/1-cover.jpg" alt="图片描述">
+  <img src="1-cover.jpg" alt="图片描述">
 </div>
 
 <style>
