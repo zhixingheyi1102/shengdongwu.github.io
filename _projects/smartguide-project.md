@@ -17,10 +17,10 @@ In terms of technical implementation, the smart glasses client utilizes the MVP 
 
 <div class="image-row">
   <div class="image-column">
-    <img src="/images/projects/undergraduate/page1.png" alt="图片1描述">
+    <img src="../../images/projects/undergraduate/page1.png" alt="图片1描述">
   </div>
   <div class="image-column">
-    <img src="/images/projects/undergraduate/page2.png" alt="图片2描述">
+    <img src="../../images/projects/undergraduate/page2.png" alt="图片2描述">
   </div>
 </div>
 
