@@ -18,10 +18,10 @@ The system is primarily composed of three layers: The peripheral layer utilizes 
 
 <div class="image-row">
   <div class="image-column">
-    <img src="/images/projects/undergraduate/device.png" alt="图片1描述">
+    <img src="../../images/projects/undergraduate/device.png" alt="图片1描述">
   </div>
   <div class="image-column">
-    <img src="/images/projects/undergraduate/stimulus.png" alt="图片2描述">
+    <img src="../../images/projects/undergraduate/stimulus.png" alt="图片2描述">
   </div>
 </div>
 
@@ -61,10 +61,10 @@ In-vivo experiments were conducted in mice for system validation. Targeting the 
 
 <div class="image-row">
   <div class="image-column">
-    <img src="/images/projects/undergraduate/mouse.png" alt="图片1描述">
+    <img src="../../images/projects/undergraduate/mouse.png" alt="图片1描述">
   </div>
   <div class="image-column">
-    <img src="/images/projects/undergraduate/re.png" alt="图片2描述">
+    <img src="../../images/projects/undergraduate/re.png" alt="图片2描述">
   </div>
 </div>
 
