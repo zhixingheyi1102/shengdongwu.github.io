@@ -1,0 +1,129 @@
+---
+layout: archive
+title: "photography"
+permalink: /photography/
+author_profile: true
+---
+
+<style>
+.photography-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 2em;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+
+{% include base_path %}
+
+<div class="photography-gallery">
+  
+  <!-- 示例照片 1: 风景摄影 -->
+  <div class="photo-item" onclick="openLightbox('/images/photography/1.jpg')">
+    <img src="/images/photography/1.jpg" alt="山川湖海" onerror="this.src='/images/500x300.png'">
+  </div>
+
+  <!-- 示例照片 2: 人像摄影 -->
+  <div class="photo-item" onclick="openLightbox('/images/photography/2.jpg')">
+    <img src="/images/photography/2.jpg" alt="光影人像" onerror="this.src='/images/bio-photo.jpg'">
+  </div>
+
+  <!-- 示例照片 3: 街头摄影 -->
+  <div class="photo-item" onclick="openLightbox('/images/photography/3.jpg')">
+    <img src="/images/photography/3.jpg" alt="城市印象" onerror="this.src='/images/image-alignment-580x300.jpg'">
+  </div>
+
+  <!-- 示例照片 4: 黑白摄影 -->
+  <div class="photo-item" onclick="openLightbox('/images/photography/4.jpg')">
+    <img src="/images/photography/4.jpg" alt="黑白印象" onerror="this.src='/images/image-alignment-300x200.jpg'">
+  </div>
+
+  <!-- 示例照片 5: 微距摄影 -->
+  <div class="photo-item" onclick="openLightbox('/images/photography/5.jpg')">
+    <img src="/images/photography/5.jpg" alt="微观世界" onerror="this.src='/images/image-alignment-150x150.jpg'">
+  </div>
+
+  <!-- 示例照片 6: 建筑摄影 -->
+  <div class="photo-item" onclick="openLightbox('/images/photography/6.jpg')">
+    <img src="/images/photography/6.jpg" alt="建筑美学" onerror="this.src='/images/homepage.png'">
+  </div>
+
+</div>
+
+<!-- 灯箱效果 -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function openLightbox(src) {
+  document.getElementById('lightbox').style.display = 'block';
+  document.getElementById('lightbox-img').src = src;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// 键盘ESC关闭灯箱
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeLightbox();
+  }
+});
+</script>
